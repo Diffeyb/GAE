@@ -271,7 +271,7 @@ def identify_binary(D):
 
 def display_features(feature_names):
     for i,f in zip(range(len(feature_names)),feature_names):
-        print i,f
+        print (i,f)
 
 def remove_cyto_outliers(lD_cyto):
         X = lD_cyto
@@ -305,7 +305,7 @@ def add_noise_gaussian(x,sigma=0.1,noise_level=0.5):
 
 def test():
     data = get_processed_data()
-    print data['demo']['patient_id']
+    print (data['demo']['patient_id'])
 
 if __name__=='__main__':
     data = get_training_data()
